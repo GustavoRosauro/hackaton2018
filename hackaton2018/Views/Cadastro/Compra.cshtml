@@ -1,0 +1,39 @@
+﻿@model hackaton2018.Models.Cadastro
+@{
+    ViewBag.Title = "Compra";
+}
+<center>
+    <h2>Compra</h2>
+    <div class="col-md-16">
+        <label class="label-info">Valor Compra</label>
+        <br />
+        <input type="number" id="compra" />
+        <br />
+        <br />
+        <center>
+            <button id="enviaDados" class="btn-success">Efetiva Compra</button>
+        </center>
+        <div class="col-md-10">
+
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Finaliza Compra</h4>
+                    </div>
+                    <div class="modal-body">
+                        Voce deseja Finalizar a essa compra ???
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" id="finalizar">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+

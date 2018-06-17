@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Recepcao";
+}
+
+<h2>Recepção</h2>
+<div class="col-md-10">
+    <label class="label-info">Digite seu CPF</label>
+    <input id="cpf" class="input-group-text" />
+
+    <button id="BuscaModal">Enviar</button>
+
+    <div class="modal fade" id="myModalCPF" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Finaliza Compra</h4>
+                </div>
+                <div class="modal-body">
+                    Seu CPF está correto  ???
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="finalizarCPF">Finalizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalErro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Finaliza Compra</h4>
+                </div>
+                <div class="modal-body">
+                    CPF não encontrado em nossa base!!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
